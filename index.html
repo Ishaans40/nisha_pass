@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        background-color: black;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        .center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+button {
+width: 150px;
+height: 50px;
+font-size: 20px;
+border-radius: 25px;
+border: none;
+outline: none;
+background-color: #ffffff;
+color: black;
+box-shadow: 0 0 50px #ffffff;
+transition: all 0.3s ease-in-out;
+cursor: pointer;
+}
+button:hover {
+background-color: #ffffff;
+color: black;
+box-shadow: 0 0 70px #ffffff;
+transform: scale(1.1);
+}
+</style>
+
+  </head>
+  <body>
+    <div class="center-div">
+      <button onclick="checkPassword()">Is it you ? &#129488;</button>
+    </div>
+    <script>
+      function checkPassword() {
+        var password = prompt("Khul jaa sim sim :)");
+        if (password == "14") {
+          window.location.href = "https://ishaans40.github.io/nisha/";
+        }  else {
+          alert("Abe sahi se socho yaar !");
+        }
+      }
+    </script>
+  </body>
+</html>
