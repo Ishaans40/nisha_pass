@@ -38,13 +38,15 @@ transform: scale(1.1);
 
   </head>
   <body>
+      <!-- source code dekhne se kuch nahi milne wala ji -->
     <div class="center-div">
       <button onclick="checkPassword()">Is it you ? &#129488;</button>
     </div>
     <script>
       function checkPassword() {
         var password = prompt("Khul jaa sim sim :)");
-        if (password == "14") {
+        var passwordHex = parseInt(password, 10).toString(16);
+        if (passwordHex === "e") {
           window.location.href = "https://ishaans40.github.io/nisha/";
         }  else {
           alert("Abe sahi se socho yaar !");
